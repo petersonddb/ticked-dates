@@ -1,0 +1,8 @@
+# Create new node js app
+docker run -it --rm -v $(pwd):/web -w /web node:15.12.0 npm init
+
+# Install package
+docker run --rm -v $(pwd):/web -w /web node:15.12.0 npm install <pkg> --save
+
+# Run the server
+docker-compose up api

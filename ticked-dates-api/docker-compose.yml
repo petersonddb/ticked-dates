@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  api:
+    image: node:15.12.0
+    command: npx nodemon
+    working_dir: /web
+    ports:
+      - 3001:3000
+    volumes:
+      - ./:/web
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+  db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+  mongo-express:
+    image: mongo-express
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER: db
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    depends_on:
+      - db
