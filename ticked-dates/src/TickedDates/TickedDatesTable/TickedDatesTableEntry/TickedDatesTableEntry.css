@@ -1,0 +1,21 @@
+.ticked-dates-table-entry td:last-child {
+  text-align: right;
+}
+
+.ticked-dates-table-entry td span {
+  margin-left: 12px;
+}
+
+.ticked-dates-table-entry td div {
+  margin: 6px 12px;
+}
+
+.ticked-dates-table-entry td input {
+  width: 50%;
+  margin: 6px 12px;
+  text-align: center;
+}
+
+.ticked-dates-table-entry td input[type="submit"] {
+  display: none;
+}

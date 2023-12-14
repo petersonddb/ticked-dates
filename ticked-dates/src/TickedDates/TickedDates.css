@@ -1,0 +1,17 @@
+.ticked-dates .title {
+  margin-bottom: 125px;
+}
+
+.ticked-dates .ticked-dates-table {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.ticked-dates .blank-slate {
+  width: 100%;
+}
+
+.ticked-dates .errors-list {
+  width: 100%;
+  margin-bottom: 12px;
+}

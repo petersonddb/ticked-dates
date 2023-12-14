@@ -1,0 +1,10 @@
+.app-container .menu {
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+}
+
+.app-container .ticked-dates {
+  margin-left: 20%;
+  padding: 10em;
+}

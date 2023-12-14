@@ -1,0 +1,10 @@
+.blank-slate {
+  background: #FFFFFF;
+  padding: 52px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5em;
+  opacity: 0.3;
+}

@@ -1,0 +1,11 @@
+# Create new app
+docker run --rm -v $(pwd):/web node:15.12.0 npx create-react-app web
+
+# Install dependencies
+docker run --rm -v $(pwd):/web -w /web node:15.12.0 npm install <pkg> --save
+
+# Run app in dev
+docker-compose up web
+
+# Give permission over files created from container
+sudo chown -R <user> .

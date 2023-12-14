@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    image: node:15.12.0
+    command: npm start
+    working_dir: /web
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/web

@@ -1,0 +1,29 @@
+.menu {
+  background: #ECECEC;
+  padding: 26px 12px;
+  box-sizing: border-box;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 2px 8px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.menu ul li.active {
+  border-radius: 0 10px 10px 0;
+  background: #A6F0F0;
+}
+
+.menu ul li .anchor {
+  display: block;
+  color: inherit;
+  font-size: 1.3em;
+  text-decoration: none;
+}
